@@ -1,38 +1,94 @@
-.App {
+body{
+  box-sizing: border-box;
+}
+img{
+  max-width:100%;
+}
+p{
+  word-break:break-all;
+}
+
+.App{
+  max-width:768px;
+  margin: 0 auto;
+}
+.text-center{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.question{
+  margin:10px;
+  padding:15px;
+  border:1px solid lightgrey !important;
+  border-radius:5px;
+}
+.flex{
+  display:flex;
+}
+.m-1{
+  margin:1rem;
+}
+.mt-5{
+  margin-top:5rem;
+}
+.justify-content-between{
+  justify-content: space-between;
+}
+.q-owner{
+  font-size:13px;
+  font-weight:500;
+}
+.question-accordion-btn{
+  border:none;
+  background:none;
+  text-align: left;
+  font-size:20px;
+  padding:5px;
+}
+span.tag.badge.badge-pill.badge-dark {
+  border: 0;
+  padding: 5px 15px 7px;
+}
+.comment-count{
+  flex:2;
+  text-align: right;
+}
+.comment{
+  border-bottom: 1px solid lightgrey;
+  padding:10px;
+}
+.commentor{
+  font-weight:bold;
+  font-size:13px;
+}
+.tag-wrapper{
+  flex:10;
+  display:flex;
+  flex-wrap: wrap;
+}
+.tag{
+  padding:5px;
+  background:#f9f9f9;
+  border:1px solid #858585;
+  border-radius:3px;
+  font-size:12px;
+  margin:5px;
+}
+.tag:first-of-type{
+  margin-left:0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.q-body{
+  margin:10px;
+  border-top:1px solid lightgrey;
+  border-bottom:1px solid lightgrey;
+  padding:15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+code{
+  overflow-x: scroll; 
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+pre {
+  background: #e1fbfb;
+  padding: 20px;
 }
