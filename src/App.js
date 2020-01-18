@@ -81,6 +81,8 @@ export default class App extends React.Component {
           </div>
           
         {this.state.searchResult ? (
+          <div>
+            <h5 className="m-3">Search Results:</h5>
              <Accordion defaultActiveKey={this.state.searchResult.question_id}>
                 {this.state.searchResult.map(result => (
                   <Card key={result.question_id} className="question">
@@ -94,7 +96,7 @@ export default class App extends React.Component {
                             <Badge pill variant="dark" key={tag} className="tag">{tag}</Badge>
                           ))}
                         </div>
-                        <div className="comment-count">Comments: {result.comment_count}</div>
+                        <div className="comment-count"><p className="p-1">Comments: {result.comment_count}</p></div>
                       </div>
                   </Card.Header>
                   <Accordion.Collapse eventKey={result.question_id}>
@@ -107,21 +109,25 @@ export default class App extends React.Component {
                       )}
                       
                       <h6 className="ml-3">Comments:</h6>
-                      { result.comments ? (
-                        result.comments.map(comment =>(
-                          <div className="comment">
-                            <div className="commentor">{comment.owner.display_name}</div>
-                            <div className="comment-body">{ ReactHtmlParser(comment.body)}</div>
-                          </div>
-                        ))) : (
-                          <div className="ml-3">No comments on this question.</div>
-                        )
-                      }
+                      <div class="comment-wrapper">
+                        { result.comments ? (
+                          
+                          result.comments.map(comment =>(
+                            <div className="comment">
+                              <div className="commentor">{comment.owner.display_name}</div>
+                              <div className="comment-body">{ ReactHtmlParser(comment.body)}</div>
+                            </div>
+                          ))) : (
+                            <div className="ml-3">No comments on this question.</div>
+                          )
+                        }
+                      </div>
                     </div>
                   </Accordion.Collapse>
                 </Card>
                 ))}
               </Accordion>
+          </div>              
         ):(
           <Accordion defaultActiveKey={this.state.questions.question_id}>
             {this.state.questions.map(question => (
@@ -136,7 +142,7 @@ export default class App extends React.Component {
                           <Badge pill variant="dark" key={tag} className="tag">{tag}</Badge>
                         ))}
                       </div>
-                      <div className="comment-count">Comments: {question.comment_count}</div>
+                      <div className="comment-count"><p className="p-1">Comments: {question.comment_count}</p></div>
                     </div>
                 </Card.Header>
                 <Accordion.Collapse eventKey={question.question_id}>
