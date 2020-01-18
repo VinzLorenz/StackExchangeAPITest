@@ -1,4 +1,4 @@
-body{
+body,html{
   box-sizing: border-box;
 }
 img{
@@ -14,6 +14,13 @@ p{
 }
 .text-center{
   text-align: center;
+}
+#search{
+  border:none;
+  max-width:300px;
+  font-size:20px;
+  border-bottom:3px solid #000000;
+  
 }
 .question{
   margin:10px;
@@ -48,6 +55,7 @@ span.tag.badge.badge-pill.badge-dark {
   border: 0;
   padding: 5px 15px 7px;
   background-color: #343A43;
+  margin: 5px 3px;
 }
 .comment-count{
   flex:2;
