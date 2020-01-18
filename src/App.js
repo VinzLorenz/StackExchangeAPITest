@@ -30,9 +30,9 @@ export default class App extends React.Component {
       searchResult: null,
     }
   }
-
+  
     fetchSearch = (query) => {
-      const searchUrl = 'https://api.stackexchange.com/2.2/search?order=desc&sort=activity&intitle='+query+'&site=stackoverflow'
+      const searchUrl = 'https://api.stackexchange.com/2.2/search?order=desc&sort=activity&intitle='+query+'&site=stackoverflow&filter=!LVBj29m4F4gXb6)0-yK6X9'
 
       axios.get(searchUrl)
       .then((response) => {
