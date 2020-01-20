@@ -2,9 +2,10 @@
 
 ## To install on your desktop
 
-1. git init
-2. git clone 'https://github.com/VinzLorenz/StackExchangeAPITest.git'
-3. yarn start
+**Open your Command Line**
+1. ### 'git init'
+2. ### 'git clone 'https://github.com/VinzLorenz/StackExchangeAPITest.git''
+3. ### 'yarn start'
 
 ## Other available commands:
 
