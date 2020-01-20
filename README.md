@@ -1,6 +1,7 @@
-## Installation Instruction
+# Installation Instruction
 
 ## To install on your desktop
+
 1. git init
 2. git clone 'https://github.com/VinzLorenz/StackExchangeAPITest.git'
 3. npm start
