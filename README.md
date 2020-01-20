@@ -4,7 +4,7 @@
 
 1. git init
 2. git clone 'https://github.com/VinzLorenz/StackExchangeAPITest.git'
-3. npm start
+3. yarn start
 
 ## Other available commands:
 
