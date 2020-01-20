@@ -1,8 +1,11 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Installation Instruction
 
-## Available Scripts
+## To install on your desktop
+1. git init
+2. git clone 'https://github.com/VinzLorenz/StackExchangeAPITest.git'
+3. npm start
 
-In the project directory, you can run:
+## Other available commands:
 
 ### `yarn start`
 
